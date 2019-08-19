@@ -1,0 +1,40 @@
+.artist-data {
+  display: grid;
+  grid-template-columns: 8rem 33rem 2em;
+  grid-template-rows: 8rem;
+
+  & img {
+    width: 6rem;
+    border-radius: 1rem;
+    grid-column: 1 / 2;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__wrapper {
+    grid-column: 2 / 3;
+    align-self: center;
+    line-height: 1.7;
+
+    & h3 {
+      color: $color-white;
+      font-weight: 500;
+      font-size: 1.8rem;
+
+      &::after {
+        content: '';
+        display: block;
+        margin: 0 0;
+        width: 90%;
+        border-bottom: 1px solid $color-white;
+      }
+    }
+
+    & h5 {
+      color: $color-black10;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+}
